@@ -1,8 +1,44 @@
+import CompanionCard from '@/components/CompanionCard'
+import CompanionsList from '@/components/CompanionsList'
+import CTA from '@/components/CTA'
 import React from 'react'
 
 const Page = () => {
   return (
-    <div>Page</div>
+    <main>
+      <h1>Popular Companions</h1>
+      <section className="home-section">
+        <CompanionCard
+        id="123"
+        name="Neura the Brainy Explorer"
+        topic="Neural network of the Brain"
+        subject="science"
+        duration={45}
+        color="#ffda6e"
+        />
+        <CompanionCard
+        id="456"
+        name="countsy the number Wizard"
+        topic="Drivatives & Integrals"
+        subject="math"
+        duration={40}
+        color="#e5d0ff"
+        />
+        <CompanionCard
+        id="789"
+        name="Verba the Vocabulary Builder"
+        topic="English Literature"
+        subject="English"
+        duration={30}
+        color="#BDE7FF"
+        />
+        
+      </section>
+      <section className='home-section'>
+        <CompanionsList/>
+        <CTA/>
+      </section>
+    </main>
   )
 }
 
