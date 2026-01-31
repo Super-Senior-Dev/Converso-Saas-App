@@ -9,7 +9,6 @@ interface CompanionCardProps {
     subject: string;
     duration: number;
     color: string;
-    topic:string
 }
 
 const CompanionCard = ({id,name,topic,subject,duration,color}: CompanionCardProps) => {
